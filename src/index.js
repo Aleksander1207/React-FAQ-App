@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import ReactDom from 'react-dom';
 import './index.css';
 
+/**
+ * @param {boolean[]} visibleAnswers - an array of boolean values used for the logic of hiding or revealing an answer. All answers are hidden by default.
+ * @param {Function} setVisibleAnswers - This function component will be responsible for rendering the list of 
+ * questions, as well as handling the logic of whether an answer should be revealed (accomplished by using the state hook)
+ * @param {Function} handleClick - a callback function called when one of the buttons is clicked. It is used for revealing the corresponding answer.
+ */
+
 function FAQ(){
     const [visibleAnswers, setVisibleAnswers] = useState([false, false, false, false, false, false, false, false, false, false]);
     

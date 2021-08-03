@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.center-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center-container h1,p{
+    text-align: center;
+}
+.center-container h1{
+    font-size: 45px;
+}
+.center-container p{
+    font-size: 18px;
+}
+.question-list{   
+    width: 100%;
+}
+.question-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+button{
+    width: 50%;
+    margin: 10px auto;
+    font-size: 25px;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(202, 201, 201);
+}
+.question-holder .answer{
+    width: 50%;
+    margin: auto;
+}
+.answer p{
+    text-align: left;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+.fas{
+    position: relative;
+    left: 65%;
+}
+.fa-sort-up{
+    top:5px;
 }
